@@ -1,3 +1,6 @@
+# Unfortunately I still have not got this working. Import works now, but duplicate rejection does not detect duplicates.
+
+
 Import to iTunes
 ================
 
