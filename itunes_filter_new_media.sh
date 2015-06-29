@@ -4,7 +4,7 @@ permitted_file_extensions="mov|mp4|m4v|mpg|mpeg|m2v|mp2|ite|aac|m4a|m4b|m4p|mp3|
 
 eval "active_library="$(defaults read com.apple.iApps iTunesRecentDatabases)
 printf -v active_library '%b' "${active_library[0]//%/\\x}"
-active_library="${active_library#file://localhost}"
+active_library="${active_library#file://}"
 if [[ ! -e "$active_library" ]]; then
 	exit 1
 fi
