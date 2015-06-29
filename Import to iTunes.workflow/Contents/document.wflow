@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>381</string>
+	<string>409.2</string>
 	<key>AMApplicationVersion</key>
-	<string>2.4</string>
+	<string>2.5</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -57,7 +57,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Display Notification.action</string>
 				<key>ActionName</key>
-				<string>Display Notification</string>
+				<string>Näytä ilmoitus</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>message</key>
@@ -137,12 +137,10 @@
 						<string>2</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>426.000000:1191.000000</string>
+				<string>360.000000:260.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -194,7 +192,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Run Shell Script.action</string>
 				<key>ActionName</key>
-				<string>Run Shell Script</string>
+				<string>Suorita skripti</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
@@ -202,7 +200,7 @@
 
 eval "active_library="$(defaults read com.apple.iApps iTunesRecentDatabases)
 printf -v active_library '%b' "${active_library[0]//%/\\x}"
-active_library="${active_library#file://localhost}"
+active_library="${active_library#file://}"
 if [[ ! -e "$active_library" ]]; then
 	exit 1
 fi
@@ -275,10 +273,10 @@ done</string>
 				<string>6CEE95C4-BB24-4785-8061-5B5FB77E38C7</string>
 				<key>Keywords</key>
 				<array>
-					<string>Shell</string>
-					<string>Script</string>
-					<string>Command</string>
-					<string>Run</string>
+					<string>Komentotulkki</string>
+					<string>Skripti</string>
+					<string>Komento</string>
+					<string>Suorita</string>
 					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
@@ -357,14 +355,12 @@ done</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>426.000000:947.000000</string>
+				<string>360.000000:443.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/fi.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -423,11 +419,11 @@ done</string>
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Import Files into iTunes.action</string>
 				<key>ActionName</key>
-				<string>Import Files into iTunes</string>
+				<string>Tuo tiedostoja iTunesiin</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>chosenName</key>
-					<string>Library</string>
+					<string>Kirjasto</string>
 					<key>newName</key>
 					<string></string>
 					<key>playlistSource</key>
@@ -453,15 +449,13 @@ done</string>
 				<string>4334833E-814D-4ABC-BFEB-F9B9B6BF5960</string>
 				<key>Keywords</key>
 				<array>
-					<string>Add</string>
-					<string>File</string>
-					<string>Playlist</string>
-					<string>Music</string>
+					<string>Lisää</string>
+					<string>Arkisto</string>
+					<string>Soittolista</string>
+					<string>Musiikki</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>D15FC378-76E6-43B8-A2C3-B913E2BBE855</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>A1CF9479-91F7-4F4F-ACF5-610EE26950BA</string>
 				<key>UnlocalizedApplications</key>
@@ -510,12 +504,10 @@ done</string>
 						<string>2</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>426.000000:315.000000</string>
+				<string>360.000000:548.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Import Files into iTunes.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -569,7 +561,7 @@ done</string>
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Display Notification.action</string>
 				<key>ActionName</key>
-				<string>Display Notification</string>
+				<string>Näytä ilmoitus</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>message</key>
@@ -647,12 +639,10 @@ done</string>
 						<string>2</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>426.000000:210.000000</string>
+				<string>360.000000:738.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -662,21 +652,21 @@ done</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>19D3EE04-D5B9-4A45-9277-BF293BA232F1</key>
+		<key>03A00C9C-F72E-4585-BD3C-AC8ADA4D8657</key>
 		<dict>
 			<key>from</key>
 			<string>A1CF9479-91F7-4F4F-ACF5-610EE26950BA - A1CF9479-91F7-4F4F-ACF5-610EE26950BA</string>
 			<key>to</key>
 			<string>6D04564C-D504-4F68-9404-8D8F84D143C7 - 6D04564C-D504-4F68-9404-8D8F84D143C7</string>
 		</dict>
-		<key>27D95707-5793-4ECD-98A0-D2D902357AD7</key>
+		<key>40C70410-F09F-438C-ACC3-5CB0D51CD20E</key>
 		<dict>
 			<key>from</key>
 			<string>E5B9E7DD-4CD8-493D-B793-26EFD181F483 - E5B9E7DD-4CD8-493D-B793-26EFD181F483</string>
 			<key>to</key>
 			<string>A1CF9479-91F7-4F4F-ACF5-610EE26950BA - A1CF9479-91F7-4F4F-ACF5-610EE26950BA</string>
 		</dict>
-		<key>3EE68EF0-4187-4D5D-B267-C91C59089284</key>
+		<key>E3702E75-DB10-4E6B-A67B-54C6DE59D730</key>
 		<dict>
 			<key>from</key>
 			<string>423A3CA7-EF0B-4651-98CF-2BF5B6375F96 - 423A3CA7-EF0B-4651-98CF-2BF5B6375F96</string>
